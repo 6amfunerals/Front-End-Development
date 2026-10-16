@@ -1,12 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+html{
+    scroll-behavior: smooth;
+}
+
+#home{
+    background-color: #c8ceee;
+    height: 100vh;
+}
+
+#about{
+    background-color: #d6e5bd;
+    height: 100vh;
+}
+
+#features{
+    background-color: #fcdce1;
+    height: 100vh;
+}
 
 .header-nav{
-    position: sticky;
+    padding-top: 1.5rem;
+    position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     z-index: 1000;
-
-
 }
 
 .navbar{
@@ -19,7 +42,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
     list-style: none;
     
 }
