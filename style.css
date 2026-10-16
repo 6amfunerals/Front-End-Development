@@ -11,9 +11,8 @@
 
 .navbar{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    border-bottom: 1px solid;
 }
 
 .nav-items{
@@ -25,23 +24,19 @@
     
 }
 
+.nav-items .active{
+    border-bottom: 1px solid black;
+}
+
+
+
 .nav-items a{
     padding: 12px;
     margin-right: 3rem;
-    border-radius: 15px;
     color: black;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
-    transition: 0.3s ease-in;
-}
-
-.nav-items a:hover{
-    background-color: rgba(195, 210, 218, 0.397);
-}
-
-.navContainer{
-    
 }
 
 .logo{
