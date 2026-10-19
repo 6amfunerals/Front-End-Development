@@ -27,6 +27,8 @@ html{
     height: 100vh;
 }
 
+
+
 .header-nav {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -48,9 +50,17 @@ html{
     padding-bottom: 25px;
 }
 
+.logoContainer{
+    margin-left: 3rem;
+}
+
 .logo{
     width: 120px;
-    margin-left: 4rem;
+}
+
+.navbar a,
+.logo-link img {
+    user-select: none;
 }
 
 .navbar {
