@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 html{
     scroll-behavior: smooth;
@@ -65,7 +68,7 @@ html{
 
 .navbar {
     position: absolute;
-    left: 50%;
+    left: 53%;
     transform: translateX(-50%);
 }
 
@@ -74,25 +77,71 @@ html{
     align-items: center;
     justify-content: center;
     gap: 10px;
-    list-style: none;
-    
+    list-style: none;   
 }
 
 .nav-items .active{
     border-bottom: 1px solid black;
 }
 
-
-
 .nav-items a{
+    display: inline-block;
     padding: 12px;
     margin-right: 3rem;
     color: black;
     text-decoration: none;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-items a:hover{
+    transform: scale(1.1);
 }
 
 .logo{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* HERO PAGE */
+.heroHeader{
+    font-family: 'Anton';
+}   
+
+.heroWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroContents{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+}
+
+.heroContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 70%;
+}
+
+.rightSide{
+    h1{
+        font-size: 6rem;
+        color: rgb(151, 52, 52);
+    }
+    p{
+        font-size: 1.5rem;
+        width: 650px;
+    }
+}
+
+.leftSide{
+    img{
+        width: 800px;
+    }
 }
