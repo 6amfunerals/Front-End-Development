@@ -12,6 +12,8 @@ html{
     scroll-behavior: smooth;
 }
 
+/*SECTIONS*/
+
 #home{
     height: 100vh;
 }
@@ -19,11 +21,14 @@ html{
 #gallery{
     background-color: aqua;
     height: 50vh;
+    scroll-margin-top: 25vh;
 }
 
 #discover{
-    background-color: #d6e5bd;
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #features{
@@ -36,8 +41,10 @@ html{
     height: 100vh;
 }
 
+/*      */
 
 
+/* NAVBAR */
 .header-nav {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -154,6 +161,8 @@ html{
     font-family: 'Work Sans';
 }
 
+/* HERO PAGE BUTTONS*/
+
 .heroButton{
     font-size: 18px;
     padding: 12px 35px;
@@ -199,10 +208,75 @@ html{
     color: rgb(151, 52, 52);
 }
 
-
+/* LEFT SIDE | HERO PAGE */
 
 .leftSide{
     img{
         width: 800px;
     }
 }
+
+/* FEATURES SECTION */
+
+.featuresHeader{
+    font-family: 'Anton';
+    color: rgb(151, 52, 52);
+
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    margin-bottom: 5rem;
+    font-size: 5rem;
+}
+
+.featureContainer{
+    font-family: 'Work Sans';
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 70px;
+
+    h1{
+        font-size: 1.8rem;
+        margin-top: 8rem;
+        margin-bottom: 2rem;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+
+    /*ADD BUTTON*/
+    /*ADD ICON/IMAGE*/
+}
+
+.card1{
+    background-color: rgb(151, 52, 52);
+    color: white;
+    border-radius: 20px;
+
+    padding: 25px;
+    height: 500px;
+    width: 350px;
+}
+
+.card2{
+    background-color: rgb(151, 52, 52);
+    color: white;
+    border-radius: 20px;
+
+    padding: 25px;
+    height: 500px;
+    width: 350px;
+}
+
+.card3{
+    background-color: rgb(151, 52, 52);
+    color: white;
+    border-radius: 20px;
+
+    padding: 25px;
+    height: 500px;
+    width: 350px;
+}
+
