@@ -16,6 +16,11 @@ html{
     height: 100vh;
 }
 
+#gallery{
+    background-color: aqua;
+    height: 50vh;
+}
+
 #discover{
     background-color: #d6e5bd;
     height: 100vh;
@@ -141,9 +146,13 @@ html{
 
 .heroParagraph{
     font-family: 'Work Sans';
-    margin-bottom: 1.3rem;
+    margin-bottom: 2rem;
 }
 
+.buttonContainer a{
+    text-decoration: none;
+    font-family: 'Work Sans';
+}
 
 .heroButton{
     font-size: 18px;
