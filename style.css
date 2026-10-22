@@ -306,33 +306,7 @@ html{
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
 }
 
-.fa-truck-fast{
-    color: rgb(151, 52, 52);
-    background-color: white;
-
-    font-size: 3rem;
-    margin-top: 2rem;
-    padding: 15px;
+.featureImages{
+    height: 100px;
     border-radius: 50px;
 }
-
-.fa-map-location-dot{
-    color: rgb(151, 52, 52);
-    background-color: white;
-
-    font-size: 3rem;
-    margin-top: 2rem;
-    padding: 15px;
-    border-radius: 50px;
-}
-
-.fa-star{
-    color: rgb(151, 52, 52);
-    background-color: white;
-
-    font-size: 3rem;
-    margin-top: 2rem;
-    padding: 15px;
-    border-radius: 50px;
-}
-
