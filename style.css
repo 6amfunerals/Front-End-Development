@@ -21,8 +21,8 @@ html{
 
 #gallery{
     background-color: aqua;
-    height: 50vh;
-    scroll-margin-top: 25vh;
+    height: 100vh;
+
 }
 
 #discover{
