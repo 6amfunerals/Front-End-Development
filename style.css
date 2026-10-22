@@ -218,15 +218,26 @@ html{
 
 /* FEATURES SECTION */
 
+.feature-headerContainer{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
 .featuresHeader{
     font-family: 'Anton';
     color: rgb(151, 52, 52);
 
     display: flex;
     justify-content: center;
-    padding-top: 3rem;
-    margin-bottom: 5rem;
     font-size: 5rem;
+}
+
+.featuresP{
+    font-family: 'Work Sans';
+    font-size: 1.3rem;
+
+    display: flex;
+    justify-content: center;
 }
 
 .featureContainer{
@@ -235,11 +246,11 @@ html{
     display: flex;
     justify-content: center;
     text-align: center;
-    gap: 70px;
+    gap: 40px;
 
     h1{
         font-size: 2rem;
-        margin-top: 8rem;
+        margin-top: 3rem;
         margin-bottom: 2rem;
     }
     p{
@@ -261,6 +272,12 @@ html{
         position: relative;
 }
 
+.cardButton:hover{
+    background-color: rgb(151, 52, 52);
+    border: 1px solid white;
+    color: white;
+}
+
 .feature1, .feature2, .feature3 {
     display: flex;
     flex-direction: column;
@@ -272,8 +289,7 @@ html{
     margin-top: auto;
 }
 
-
-.card1{
+.card1, .card2, .card3 {
     background-color: rgb(151, 52, 52);
     color: white;
     border-radius: 20px;
@@ -281,25 +297,42 @@ html{
     padding: 25px;
     height: 500px;
     width: 350px;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card2{
-    background-color: rgb(151, 52, 52);
-    color: white;
-    border-radius: 20px;
-
-    padding: 25px;
-    height: 500px;
-    width: 350px;
+.card1:hover, .card2:hover, .card3:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
 }
 
-.card3{
-    background-color: rgb(151, 52, 52);
-    color: white;
-    border-radius: 20px;
+.fa-truck-fast{
+    color: rgb(151, 52, 52);
+    background-color: white;
 
-    padding: 25px;
-    height: 500px;
-    width: 350px;
+    font-size: 3rem;
+    margin-top: 2rem;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.fa-map-location-dot{
+    color: rgb(151, 52, 52);
+    background-color: white;
+
+    font-size: 3rem;
+    margin-top: 2rem;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.fa-star{
+    color: rgb(151, 52, 52);
+    background-color: white;
+
+    font-size: 3rem;
+    margin-top: 2rem;
+    padding: 15px;
+    border-radius: 50px;
 }
 
