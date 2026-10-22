@@ -128,7 +128,6 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 8rem;
 }
 
 .heroContainer {
@@ -139,13 +138,13 @@ html{
     width: 90%;
 }
 
-.heroImage{
-    height: 730px;
-}
 
 /*RIGHT SIDE*/
 
 .rightSide{
+
+    margin-left: 15rem;
+
     h1{
         font-size: 5rem;
         color: rgb(151, 52, 52);
@@ -222,8 +221,12 @@ html{
 /* LEFT SIDE | HERO PAGE */
 
 .leftSide{
+
+    margin-left: 5rem;
+
     img{
-        width: 800px;
+        width: 600px;
+        height: 730px;
     }
 }
 
