@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     margin: 0;
@@ -127,7 +128,7 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10rem;
+    gap: 8rem;
 }
 
 .heroContainer {
@@ -136,6 +137,10 @@ html{
     align-items: center;
     min-height: 100vh;
     width: 90%;
+}
+
+.heroImage{
+    height: 730px;
 }
 
 /*RIGHT SIDE*/
@@ -160,6 +165,11 @@ html{
 .buttonContainer a{
     text-decoration: none;
     font-family: 'Work Sans';
+}
+
+.backgroundPhone{
+    background-color: aqua;
+    border-radius: 100px;
 }
 
 /* HERO PAGE BUTTONS*/
@@ -221,7 +231,7 @@ html{
 
 .feature-headerContainer{
     margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-bottom: 1.3rem;
 }
 
 .featuresHeader{
@@ -242,21 +252,22 @@ html{
 }
 
 .featureContainer{
-    font-family: 'Work Sans';
+    font-family: 'Open Sans';
 
     display: flex;
     justify-content: center;
     text-align: center;
-    gap: 40px;
+    gap: 50px;
     
 
     h1{
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-top: 3rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
     p{
         font-size: 1.3rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -281,34 +292,37 @@ html{
 }
 
 .feature1, .feature2, .feature3 {
+    background: rgb(151, 52, 52);
+    background: linear-gradient(0deg, rgba(158, 46, 46, 1) 0%, rgba(255, 255, 255, 1) 50%);
+
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
+    border-radius: 15px;
+    width: 500px;
+    padding-inline: 10px;
 }
 
 .feature1 a, .feature2 a, .feature3 a {
     margin-top: auto;
 }
 
-.card1, .card2, .card3 {
-    background-color: rgb(151, 52, 52);
-    color: white;
-    border-radius: 20px;
 
-    padding: 25px;
-    height: 500px;
-    width: 350px;
+.card1, .card2, .card3 {
+    color: black;
+    border-radius: 20px;
 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card1:hover, .card2:hover, .card3:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.80);
 }
 
 .featureImages{
-    height: 100px;
-    border-radius: 50px;
+    width: 300px;         
+    height: 400px;        
+    object-fit: cover;    
+    object-position:top;
 }
