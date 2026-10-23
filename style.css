@@ -20,7 +20,6 @@ html{
 }
 
 #gallery{
-    background-color: aqua;
     height: 100vh;
 
 }
@@ -362,6 +361,18 @@ html{
     height: 700px;
 }
 
+.middleHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Arial;
+    font-weight: lighter;
+    color: rgb(222, 57, 57);
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+}
+
 
 .discoverLeft, .discoverRight {
     flex: 1;
@@ -393,3 +404,5 @@ html{
 .discoveryContents:hover{
     transform: scale(1.1);
 }
+
+/* ----------- */
