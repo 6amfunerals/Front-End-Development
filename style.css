@@ -27,14 +27,19 @@ html{
 
 #discover{
     min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+    padding: 40px 5%;
 }
 
 #features{
-    background-color: #fcdce1;
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #team{
@@ -328,4 +333,63 @@ html{
     height: 400px;        
     object-fit: cover;    
     object-position:top;
+}
+
+/* DISCOVER SECTION */
+
+.fa-location-dot, .fa-map-location-dot, .fa-utensils, .fa-store{
+    color: rgb(222, 57, 57);
+    background-color: rgba(213, 97, 97, 0.323);
+    border-radius: 100%;
+    font-size: 30px;
+
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+
+.discoverContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    margin-top: 5rem;
+}
+
+.discoverImage{
+    height: 700px;
+}
+
+
+.discoverLeft, .discoverRight {
+    flex: 1;
+    min-width: 0;
+}
+
+.discoveryContents{
+    font-size: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+
+    h5{
+        font-size: 1.5rem;
+        font-family: 'Arial';
+        font-weight: lighter;
+        margin-top: 15px;
+    }
+    p{
+        font-size: 1.2rem;
+        margin-top: 20px;
+        margin-bottom: 100px;
+        color: gray;
+    }
+}
+
+.discoveryContents:hover{
+    transform: scale(1.1);
 }
