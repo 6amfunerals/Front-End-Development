@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap+Sharp:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     margin: 0;
@@ -20,8 +21,10 @@ html{
 }
 
 #gallery{
-    height: 100vh;
+    min-height: 100vh;
+    background-color: white;
 
+    padding: 100px 40px 60px;
 }
 
 #discover{
@@ -44,9 +47,9 @@ html{
 #team{
     background-color: #000000;
     height: 100vh;
+    scroll-margin-top: 100px;
 }
 
-/*      */
 
 
 /* NAVBAR */
@@ -346,9 +349,6 @@ html{
     margin-bottom: 10px;
 }
 
-
-
-
 .discoverContainer{
     display: flex;
     justify-content: space-between;
@@ -359,18 +359,6 @@ html{
 
 .discoverImage{
     height: 700px;
-}
-
-.middleHeader{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-family: Arial;
-    font-weight: lighter;
-    color: rgb(222, 57, 57);
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
 }
 
 
@@ -405,4 +393,103 @@ html{
     transform: scale(1.1);
 }
 
-/* ----------- */
+/* HOW IT WORKS SECTION / GALLERY */
+
+.midGallery {
+    width: 100%;
+    text-align: center;
+}
+
+.midGallery-Header {
+    color: rgb(222, 57, 57);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+.boxContainers {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+.galleryBox {
+    width: 450px;
+    height: 690px;
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.galleryHeading-Container {
+    padding: 20px 18px;
+    background-color: white;
+}
+
+.galleryIcon {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 20px 18px;
+    background-color: white;
+
+
+}
+
+.headingNumber {
+    color: rgb(222, 57, 57);
+    font-family: 'Asap Sharp', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.worksText{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+.workHeader {
+    font-family: Arial, sans-serif;
+    font-weight: lighter;
+}
+
+
+.galleryParagraph {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: gray;
+    text-align: center;
+
+}
+
+.galleryImage-Container {
+    background-image: url("images/galleryBackground.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.galleryImg {
+    width: 80%;
+    height: auto;
+    max-width: none;
+    object-fit: contain;
+    object-position: top;
+    margin-top: 35px;
+}
+
