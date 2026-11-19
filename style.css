@@ -694,17 +694,9 @@ html{
 }
 
 
-/* ==========================================
-   FULL WEBSITE RESPONSIVENESS
-   Navbar, Hero, Features, Discover,
-   How It Works, and About Us
-========================================== */
 
 
-/* ==========================================
-   SMALL LAPTOPS
-   1025px - 1200px
-========================================== */
+   /* SMALL LAPTOPS */
 
 @media (min-width: 1025px) and (max-width: 1200px) {
 
@@ -775,10 +767,7 @@ html{
 }
 
 
-/* ==========================================
-   TABLET
-   769px - 1024px
-========================================== */
+/* TABLET */
 
 @media (min-width: 769px) and (max-width: 1024px) {
 
@@ -954,10 +943,7 @@ html{
 }
 
 
-/* ==========================================
-   MOBILE
-   481px - 768px
-========================================== */
+/* MOBILE  */
 
 @media (min-width: 481px) and (max-width: 768px) {
 
@@ -1210,10 +1196,7 @@ html{
 }
 
 
-/* ==========================================
-   SMALL MOBILE
-   480px AND BELOW
-========================================== */
+/* SMALL MOBILE  */
 
 @media (max-width: 480px) {
 
@@ -1540,10 +1523,7 @@ html{
 }
 
 
-/* ==========================================
-   VERY SMALL PHONES
-   360px AND BELOW
-========================================== */
+/* VERY SMALL PHONES */
 
 @media (max-width: 360px) {
 
