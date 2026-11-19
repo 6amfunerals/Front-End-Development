@@ -38,10 +38,11 @@ html{
 }
 
 #features{
+    width: 100%;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: auto;
+    padding-bottom: 120px;
+    scroll-margin-top: 100px;
 }
 
 
@@ -234,8 +235,10 @@ html{
 /* FEATURES SECTION */
 
 .feature-headerContainer{
-    margin-top: 4rem;
-    margin-bottom: 1.3rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .featuresHeader{
@@ -245,6 +248,9 @@ html{
     display: flex;
     justify-content: center;
     font-size: 5rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .featuresP{
@@ -253,16 +259,24 @@ html{
 
     display: flex;
     justify-content: center;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 .featureContainer{
     font-family: 'Open Sans';
 
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+
     display: flex;
     justify-content: center;
+    align-items: stretch;
     text-align: center;
-    gap: 50px;
-    
+    gap: 25px;
+
 
     h1{
         font-size: 1.5rem;
@@ -306,6 +320,9 @@ html{
     border-radius: 15px;
     width: 500px;
     padding-inline: 10px;
+    flex: 1 1 0;
+    min-width: 0;
+    text-align: center;
 }
 
 .feature1 a, .feature2 a, .feature3 a {
@@ -329,6 +346,9 @@ html{
     height: 400px;        
     object-fit: cover;    
     object-position:top;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* DISCOVER SECTION */
@@ -674,12 +694,919 @@ html{
 }
 
 
+/* ==========================================
+   FULL WEBSITE RESPONSIVENESS
+   Navbar, Hero, Features, Discover,
+   How It Works, and About Us
+========================================== */
 
 
+/* ==========================================
+   SMALL LAPTOPS
+   1025px - 1200px
+========================================== */
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+    /* NAVBAR */
+    .logoContainer {
+        margin-left: 1.5rem;
+    }
+
+    .nav-items a {
+        margin-right: 1rem;
+    }
+
+    /* HERO */
+    .rightSide {
+        margin-left: 5rem;
+    }
+
+    .rightSide h1 {
+        font-size: 4rem;
+    }
+
+    .rightSide p {
+        width: 100%;
+        max-width: 550px;
+    }
+
+    .leftSide {
+        margin-left: 2rem;
+    }
+
+    .leftSide img {
+        width: 450px;
+        height: auto;
+        max-width: 100%;
+    }
+
+    /* DISCOVER */
+    .discoverContainer {
+        gap: 50px;
+    }
+
+    .discoverImage {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* ABOUT US */
+    .teamLeft {
+        width: 45%;
+        padding: 50px 30px;
+    }
+
+    .teamRight {
+        padding-left: 40px;
+    }
+
+    .teamContents {
+        gap: 20px;
+    }
+
+    .aboutHeader {
+        font-size: 3.8rem;
+    }
+
+    .aboutHeader2 {
+        font-size: 4rem;
+    }
+}
 
 
+/* ==========================================
+   TABLET
+   769px - 1024px
+========================================== */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    /* NAVBAR */
+    .header-nav {
+        padding: 10px 20px;
+    }
+
+    .logoContainer {
+        margin-left: 0;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .navbar {
+        left: 55%;
+    }
+
+    .nav-items {
+        gap: 0;
+    }
+
+    .nav-items a {
+        padding: 10px 8px;
+        margin-right: 0.5rem;
+        font-size: 13px;
+    }
+
+    /* HERO */
+    #home {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .heroContainer {
+        width: 95%;
+        min-height: 100vh;
+        padding: 100px 20px 50px;
+    }
+
+    .heroContents {
+        width: 100%;
+        gap: 25px;
+    }
+
+    .rightSide {
+        margin-left: 0;
+        flex: 1;
+        min-width: 0;
+    }
+
+    .rightSide h1 {
+        font-size: 3.2rem;
+    }
+
+    .rightSide p {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .leftSide {
+        margin-left: 0;
+        flex: 1;
+        min-width: 0;
+    }
+
+    .leftSide img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .heroButton,
+    .heroButton2 {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+
+    /* FEATURES */
+    #features {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    /* DISCOVER */
+    #discover {
+        padding: 60px 5%;
+    }
+
+    .discoverContainer {
+        gap: 35px;
+        margin-top: 3rem;
+    }
+
+    .discoverImage {
+        width: 100%;
+        height: auto;
+    }
+
+    .discoveryContents {
+        font-size: 1.2rem;
+    }
+
+    .discoveryContents h5 {
+        font-size: 1.3rem;
+    }
+
+    .discoveryContents p {
+        font-size: 1rem;
+        margin-bottom: 45px;
+    }
+
+    /* HOW IT WORKS */
+    #gallery {
+        padding: 100px 25px 60px;
+    }
+
+    .boxContainers {
+        gap: 20px;
+    }
+
+    .galleryBox {
+        width: calc(50% - 10px);
+        max-width: 450px;
+        height: auto;
+    }
+
+    .galleryImage-Container {
+        width: 100%;
+        min-height: 350px;
+    }
+
+    .galleryImg {
+        width: 85%;
+        max-width: 320px;
+    }
+
+    /* ABOUT US */
+    #team {
+        flex-direction: column;
+    }
+
+    .teamLeft {
+        width: 100%;
+        padding: 60px 40px;
+        margin-top: 0;
+    }
+
+    .teamRight {
+        width: 100%;
+        padding: 50px 40px;
+        margin-top: 0;
+    }
+
+    .teamContents {
+        margin-top: 4rem;
+        gap: 30px;
+    }
+
+    .aboutHeader {
+        font-size: 4rem;
+    }
+
+    .aboutHeader2 {
+        font-size: 4.5rem;
+    }
+
+    .teamMembers {
+        margin-bottom: 30px;
+    }
+}
 
 
+/* ==========================================
+   MOBILE
+   481px - 768px
+========================================== */
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    /* NAVBAR */
+    .header-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 1000;
+
+        flex-direction: column;
+        align-items: center;
+        padding: 8px 15px;
+    }
+
+    .navContainer {
+        width: 100%;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logoContainer {
+        margin: 0;
+    }
+
+    .logo {
+        width: 95px;
+    }
+
+    .navbar {
+        position: static;
+        transform: none;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .nav-items {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2px;
+    }
+
+    .nav-items a {
+        padding: 8px;
+        margin-right: 0;
+        font-size: 12px;
+    }
+
+    /* HERO */
+    #home {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .heroWrapper {
+        width: 100%;
+    }
+
+    .heroContainer {
+        width: 100%;
+        min-height: auto;
+        padding: 150px 25px 50px;
+    }
+
+    .heroContents {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+
+    .rightSide {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .rightSide h1 {
+        font-size: clamp(2.5rem, 7vw, 4rem);
+    }
+
+    .rightSide p {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    .heroParagraph {
+        margin-bottom: 1.5rem;
+    }
+
+    .leftSide {
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .leftSide img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .heroButton,
+    .heroButton2 {
+        font-size: 14px;
+        padding: 10px 20px;
+        margin: 5px;
+    }
+
+    /* FEATURES */
+    #features {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    /* DISCOVER */
+    #discover {
+        padding: 120px 30px 60px;
+    }
+
+    .discoverContainer {
+        flex-direction: column;
+        gap: 35px;
+        margin-top: 2rem;
+    }
+
+    .discoverLeft,
+    .discoverRight {
+        width: 100%;
+    }
+
+    .discoverImage {
+        display: block;
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .discoveryContents {
+        margin-top: 2rem;
+        font-size: 1.1rem;
+    }
+
+    .discoveryContents h5 {
+        font-size: 1.3rem;
+    }
+
+    .discoveryContents p {
+        font-size: 1rem;
+        margin-bottom: 35px;
+    }
+
+    .discoveryContents:hover {
+        transform: none;
+    }
+
+    /* HOW IT WORKS */
+    #gallery {
+        padding: 120px 25px 50px;
+    }
+
+    .midGallery {
+        margin-bottom: 30px;
+    }
+
+    .boxContainers {
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+
+    .galleryBox {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+    }
+
+    .galleryHeading-Container {
+        padding: 20px 15px;
+    }
+
+    .galleryImage-Container {
+        width: 100%;
+        min-height: 380px;
+    }
+
+    .galleryImg {
+        width: 80%;
+        max-width: 320px;
+    }
+
+    /* ABOUT US */
+    #team {
+        flex-direction: column;
+    }
+
+    .teamLeft {
+        width: 100%;
+        padding: 50px 30px;
+        margin-top: 0;
+    }
+
+    .teamRight {
+        width: 100%;
+        padding: 45px 30px;
+        margin-top: 0;
+    }
+
+    .aboutHeader {
+        font-size: clamp(3rem, 8vw, 4rem);
+    }
+
+    .aboutHeader2 {
+        font-size: clamp(3rem, 8vw, 4.5rem);
+    }
+
+    .teamContents {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 4rem;
+    }
+
+    .teamContent-Header {
+        white-space: normal;
+    }
+
+    .teamCurve {
+        display: none;
+    }
+
+    .teamMembers {
+        width: 100%;
+    }
+
+    .teamRow {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .member {
+        width: 200px;
+        max-width: 100%;
+    }
+}
 
 
+/* ==========================================
+   SMALL MOBILE
+   480px AND BELOW
+========================================== */
 
+@media (max-width: 480px) {
+
+    /* NAVBAR */
+    .header-nav {
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        padding: 8px 10px;
+    }
+
+    .navContainer {
+        width: 100%;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logoContainer {
+        margin: 0;
+    }
+
+    .logo {
+        width: 85px;
+    }
+
+    .navbar {
+        position: static;
+        transform: none;
+        width: 100%;
+        margin-top: 3px;
+    }
+
+    .nav-items {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .nav-items a {
+        padding: 7px 6px;
+        margin-right: 0;
+        font-size: 11px;
+    }
+
+    /* HERO */
+    #home {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .heroWrapper {
+        width: 100%;
+    }
+
+    .heroContainer {
+        width: 100%;
+        min-height: auto;
+        padding: 140px 18px 40px;
+    }
+
+    .heroContents {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .rightSide {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .rightSide h1 {
+        font-size: clamp(2.2rem, 10vw, 3rem);
+        line-height: 1.1;
+    }
+
+    .rightSide p {
+        width: 100%;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .heroParagraph {
+        margin-bottom: 1.5rem;
+    }
+
+    .leftSide {
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .leftSide img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    .heroButton,
+    .heroButton2 {
+        font-size: 13px;
+        padding: 10px 16px;
+        margin: 5px 3px;
+    }
+
+    /* FEATURES */
+    #features {
+        width: 100%;
+        min-height: auto;
+        padding: 90px 15px 75px;
+    }
+
+    .feature-headerContainer {
+        margin-bottom: 25px;
+    }
+
+    .featuresHeader {
+        font-size: clamp(1.8rem, 8vw, 2.5rem);
+        line-height: 1.15;
+    }
+
+    .featuresP {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .featureContainer {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+
+    .feature1,
+    .feature2,
+    .feature3 {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    /* DISCOVER */
+    #discover {
+        min-height: auto;
+        padding: 100px 20px 50px;
+    }
+
+    .discoverContainer {
+        width: 100%;
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 2rem;
+    }
+
+    .discoverLeft,
+    .discoverRight {
+        width: 100%;
+    }
+
+    .discoverImage {
+        display: block;
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .discoveryContents {
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+
+    .discoveryContents h5 {
+        font-size: 1.2rem;
+    }
+
+    .discoveryContents p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-top: 12px;
+        margin-bottom: 30px;
+    }
+
+    .discoveryContents:hover {
+        transform: none;
+    }
+
+    /* HOW IT WORKS */
+    #gallery {
+        min-height: auto;
+        padding: 100px 15px 40px;
+    }
+
+    .midGallery {
+        margin-bottom: 25px;
+    }
+
+    .midGallery-Header {
+        font-size: 1rem;
+    }
+
+    .boxContainers {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .galleryBox {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+    }
+
+    .galleryHeading-Container {
+        padding: 15px 12px;
+    }
+
+    .galleryIcon {
+        padding: 15px 10px;
+        gap: 10px;
+    }
+
+    .headingNumber {
+        font-size: 1.3rem;
+    }
+
+    .worksText {
+        font-size: 1.2rem;
+    }
+
+    .galleryParagraph {
+        font-size: 14px;
+        padding: 0 12px 15px;
+    }
+
+    .galleryImage-Container {
+        width: 100%;
+        min-height: 320px;
+    }
+
+    .galleryImg {
+        width: 85%;
+        max-width: 300px;
+        margin-top: 25px;
+    }
+
+    /* ABOUT US */
+    #team {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .teamLeft {
+        width: 100%;
+        padding: 40px 20px;
+        margin-top: 0;
+    }
+
+    .teamRight {
+        width: 100%;
+        padding: 40px 20px;
+        margin-top: 0;
+    }
+
+    .teamMainHeader {
+        margin-bottom: 20px;
+    }
+
+    .aboutHeader {
+        font-size: clamp(2.7rem, 12vw, 3.5rem);
+        margin-bottom: 12px;
+    }
+
+    .aboutHeader2 {
+        font-size: clamp(2.8rem, 12vw, 4rem);
+        margin-bottom: 15px;
+    }
+
+    .teamParagraph,
+    .teamParagraph2 {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .teamContents {
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 3rem;
+    }
+
+    .teamContent-Header {
+        white-space: normal;
+    }
+
+    .teamCurve {
+        display: none;
+    }
+
+    .teamMembers {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .teamRow {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .member {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .member img {
+        height: 150px;
+    }
+}
+
+
+/* ==========================================
+   VERY SMALL PHONES
+   360px AND BELOW
+========================================== */
+
+@media (max-width: 360px) {
+
+    /* NAVBAR */
+    .nav-items a {
+        padding: 6px 4px;
+        font-size: 10px;
+    }
+
+    /* HERO */
+    .heroContainer {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .rightSide h1 {
+        font-size: 2.1rem;
+    }
+
+    .heroButton,
+    .heroButton2 {
+        font-size: 12px;
+        padding: 9px 12px;
+    }
+
+    /* FEATURES */
+    #features {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .featuresHeader {
+        font-size: 1.8rem;
+    }
+
+    /* DISCOVER */
+    #discover {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* HOW IT WORKS */
+    #gallery {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .galleryImage-Container {
+        min-height: 280px;
+    }
+
+    /* ABOUT US */
+    .teamLeft,
+    .teamRight {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .aboutHeader {
+        font-size: 2.5rem;
+    }
+
+    .aboutHeader2 {
+        font-size: 2.7rem;
+    }
+}
