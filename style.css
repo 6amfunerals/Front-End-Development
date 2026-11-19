@@ -92,10 +92,6 @@ html{
     list-style: none;   
 }
 
-.nav-items .active{
-    border-bottom: 1px solid black;
-}
-
 .nav-items a{
     display: inline-block;
     padding: 12px;
